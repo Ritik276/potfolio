@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedTape|Account</title>
+</head>
+<style>
+    #heading{
+        color: rgb(252, 248, 248);
+        background-color: #44b3f4;
+        display:flex;
+        justify-content: center;
+        height: 60px;
+        font-size:40px;
+        margin-bottom: 20px;
+
+    }
+    #login{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .login #submit{
+        background-color: #11c097;
+        height: fit-content;
+        width: fit-content;
+    }
+    #login{
+        background-color: #9cbacb;
+    }
+    #heading{
+        transform: translateY(5px);
+    }
+</style>
+<body>
+    <div id="heading">Create Your Account</div> 
+
+    <div id="login">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email here">
+        <br/>
+        <br/>
+        <label for="Username">Username </label>
+        <input type="text" id="Username" name="Username" placeholder="Enter your name" >
+        <br/>
+        <br/>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password" >
+        <br/>
+        <br/>
+        <label for="Cpass">Confirm Password</label>
+        <input type="password" id="ph" name="phno" placeholder="confirm your password" >
+        <br/>
+        <br/>
+        <input type="submit" id="submit" name="submitbtn">
+    </div>
+   <!--
+    <?php
+session_start();
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate username and password (you may need to connect to a database for this)
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    // Dummy validation - Replace this with your actual validation logic
+    if ($username === "admin" && $password === "password") {
+        // Dummy user validation - Replace with actual user validation logic
+        $_SESSION["username"] = $username;
+        header("Location: dashboard.php"); // Redirect to dashboard upon successful login
+        exit();
+    } else {
+        echo "Invalid username or password"; // Display error message
+    }
+}
+?>
+
+   -->
+
+</body>
+</html>
